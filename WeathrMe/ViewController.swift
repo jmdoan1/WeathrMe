@@ -26,7 +26,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         
         let tap = UITapGestureRecognizer(target: self, action:#selector(handleTap(_:)))
         tap.delegate = self
-        //tap.numberOfTapsRequired = 2 //"Double tap" specified in requirements
+        //tap.numberOfTapsRequired = 2 //"Double tap" specified in requirements, 2 taps on the map defaults to "zoom", removed code
         mapView.addGestureRecognizer(tap)
     }
     
